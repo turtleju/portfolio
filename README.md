@@ -1,11 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My portfolio created with Ruby on Rails :
 
-Things you may want to cover:
+* Rails version : 6.0.3.2
 
-* Ruby version
+* Ruby version : 2.6.5p114
+
+------------------------------------------
+
+Other stuffs I have to detail :
 
 * System dependencies
 
