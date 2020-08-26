@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;500;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@800&display=swap');
+
+@import "bootstrap/scss/bootstrap";
 
 @import 'pages';
-
-
+@import 'home';
+@import 'experiences';

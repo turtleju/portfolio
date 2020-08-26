@@ -1,16 +1,36 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   font-family: 'Mukta', sans-serif;
   font-weight: 200;
 }
 
 h1 {
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 4rem;
+  margin-top: 1rem;
 }
 
 p {
   font-family: 'Mukta', sans-serif;
   font-weight: 200;
+  font-size: 1.5rem;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+
 }
