@@ -1,0 +1,37 @@
+<div class="navbar navbar-expand-sm fixed-top">
+  <%= link_to "#", class: "navbar-brand" do %>
+    <%= image_tag "jg-icon.svg" %>
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "Qui suis-je?", "#", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Expériences", "#", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Compétences", "#", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Projets", "#", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Fun Facts", "#", class: "nav-link" %>
+      </li>
+      <li class="dropdown">
+        <%= image_tag "download-icon.svg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <%= link_to "Action", "#", class: "dropdown-item" %>
+          <%= link_to "Another action", "#", class: "dropdown-item" %>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

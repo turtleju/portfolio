@@ -1,0 +1,35 @@
+.navbar {
+  justify-content: space-between;
+  background-color: transparent;
+  .nav-link {
+    font-weight: 800;
+    color: white;
+  }
+}
+
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar .navbar-brand img {
+  width: 40px;
+}
+
+.avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.navbar-white {
+  background-color: white;
+  -webkit-box-shadow: 0 8px 16px 0px rgba(0,0,0,0.05);
+     -moz-box-shadow: 0 8px 16px 0px rgba(0,0,0,0.05);
+          box-shadow: 0 8px 16px 0px rgba(0,0,0,0.05);
+  .nav-link {
+    color: black;
+  }
+}
+
+.nav-item.active a {
+  color: #00d1cd;
+}
