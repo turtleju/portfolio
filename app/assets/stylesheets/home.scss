@@ -2,7 +2,8 @@
   width: auto;
   height: 66vh;
   position: relative;
-  background-image: url(/assets/main-banner.jpg);
+  // background-image: url(/assets/main-banner.jpg);
+  background-color: #f35588;
   background-size: cover;
 }
 
@@ -57,6 +58,6 @@
   }
 
   .about-shape-bottom .shape-fill {
-      fill: #fff;
+      fill: #00d1cd;
   }
 }
