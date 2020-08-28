@@ -8,11 +8,14 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-import "bootstrap"
+import "bootstrap";
+import anime from 'animejs/lib/anime.es.js';
 
+import { initTitle } from '../components/title';
 import { initUpdateNavbarOnScroll } from '../components/navbar';
 
 document.addEventListener('turbolinks:load', () => {
+  initTitle();
   initUpdateNavbarOnScroll();
 });
 
