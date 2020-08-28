@@ -27,10 +27,21 @@ h2 {
   font-size: 4rem;
 }
 
+h4 {
+  font-size: 1.3rem;
+}
+
 p {
   font-family: 'Mukta', sans-serif;
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 img, video {
