@@ -13,10 +13,12 @@ import anime from 'animejs/lib/anime.es.js';
 
 import { initTitle } from '../components/title';
 import { initUpdateNavbarOnScroll } from '../components/navbar';
+import { initSmoothScroll } from '../components/smoothscroll';
 
 document.addEventListener('turbolinks:load', () => {
   initTitle();
   initUpdateNavbarOnScroll();
+  initSmoothScroll();
 });
 
 // Uncomment to copy all static images under ../images to the output folder and reference
