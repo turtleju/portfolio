@@ -1,9 +1,8 @@
 .about {
   position: relative;
-  background-color: #000;
-  color: #fff;
-  margin-top: -22px;
-
+  background-color: #f9f9f9;
+  color: #000;
+  padding-bottom: 12rem;
 
   .about-shape-top {
     position: absolute;
@@ -24,7 +23,7 @@
   }
 
   .about-shape-top .shape-fill {
-    fill: #000;
+    fill: #f9f9f9;
   }
 
 
@@ -46,6 +45,6 @@
   }
 
   .about-shape-bottom .shape-fill {
-      fill: #00d1cd;
+      fill: #61c3c1;
   }
 }
