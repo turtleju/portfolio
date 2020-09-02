@@ -1,0 +1,82 @@
+.contact-form {
+  position: relative;
+  padding-bottom: 10rem;
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    display: grid;
+    margin-bottom: 1.5rem;
+    input, textarea {
+      border: none;
+      border-bottom: 2px solid #f35588;
+      line-height: 2rem;
+    }
+    input:focus, textarea:focus {
+      outline: 1px dashed red;;
+    }
+  }
+  .button-contact-form {
+    position: relative;
+    color: #f35588;
+    height: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px solid #f35588;
+    span{
+      position: relative;
+      z-index: 2;
+      font-size: 1.5rem;
+    }
+  }
+
+  .button-contact-form:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #f35588;
+    transition: all .35s;
+  }
+
+  .button-contact-form:hover{
+    color: #fff;
+  }
+
+  .button-contact-form:hover:after{
+    width: 100%;
+    color: #fff;
+  }
+
+
+  .wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+  }
+}
+
+@media (max-width: 768px) {
+  .button-contact-form {
+    span {
+      font-size: 1.2rem;
+    }
+  }
+}
