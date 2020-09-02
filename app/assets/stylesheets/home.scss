@@ -1,3 +1,9 @@
 .text-container {
-  padding: 8rem 16rem 8rem 16rem;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    padding: 0rem 1rem 2rem 1rem;
+  }
 }

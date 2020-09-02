@@ -29,4 +29,14 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .skill-cards-container {
+      display: block;
+    }
+    .skill-card {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
 }

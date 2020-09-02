@@ -53,3 +53,12 @@
       fill: #61c3c1;
   }
 }
+
+@media (max-width: 768px) {
+  .about {
+    padding-bottom: 8rem;
+    .github-chart {
+      margin: 2rem 0rem;
+    }
+  }
+}
