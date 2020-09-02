@@ -29,14 +29,6 @@
       -ms-transform:     scale(0.9);
       -o-transform:      scale(0.9)
     }
-    // .project-illu-monamap {
-    //   background: asset-url('project-monamap.png') center/cover;
-    // }
-    // .project-illu-ipm {
-    //   background: asset-url('project-ipm.svg') center/cover;
-    // }
-
-
   }
   .projects-shape-top {
     position: absolute;
@@ -59,6 +51,7 @@
   }
 
   .projects-shape-bottom {
+    z-index: 2;
     position: absolute;
     bottom: -3rem;
     left: 0;

@@ -1,6 +1,7 @@
 .contact-form {
   position: relative;
   padding-bottom: 10rem;
+  background-color: #f9f9f9;
   form {
     display: flex;
     flex-direction: column;
@@ -9,19 +10,20 @@
     display: grid;
     margin-bottom: 1.5rem;
     input, textarea {
+      background-color: #f9f9f9;
       border: none;
       border-bottom: 2px solid #f35588;
       line-height: 2rem;
     }
     input:focus, textarea:focus {
-      outline: 1px dashed red;;
+      outline: 1px solid #f69dba;
     }
   }
   .button-contact-form {
     position: relative;
     color: #f35588;
     height: 3rem;
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
     background-color: #fff;
     border: 2px solid #f35588;
@@ -74,9 +76,11 @@
 }
 
 @media (max-width: 768px) {
-  .button-contact-form {
-    span {
-      font-size: 1.2rem;
+  .contact-form {
+    .button-contact-form {
+      span {
+        font-size: 1.2rem;
+      }
     }
   }
 }

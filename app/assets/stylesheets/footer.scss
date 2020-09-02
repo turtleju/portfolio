@@ -2,6 +2,13 @@
   position: relative;
   height: 20vh;
   background-color: #f69dba;
+  color: #fff;
+  h4 {
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 1rem;
+  }
 }
 
 .footer-shape-top {
@@ -23,4 +30,14 @@
 
 .footer-shape-top .shape-fill {
   fill: #f69dba;
+}
+
+.footer-container {
+  padding: 2rem 16rem 2rem 16rem;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 1rem;
+  }
 }
