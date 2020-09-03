@@ -1,32 +1,33 @@
 .contact-form {
   position: relative;
-  padding-bottom: 10rem;
-  background-color: #f9f9f9;
+  background-color: #bb5180;
   form {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   label {
     display: grid;
     margin-bottom: 1.5rem;
+    width: 50%;
     input, textarea {
-      background-color: #f9f9f9;
+      background-color: #bb5180;
       border: none;
-      border-bottom: 2px solid #f35588;
+      border-bottom: 2px solid #fff;
       line-height: 2rem;
     }
     input:focus, textarea:focus {
-      outline: 1px solid #f69dba;
+      outline: 1px solid rgba(255, 255,255, .3);
     }
   }
   .button-contact-form {
     position: relative;
-    color: #f35588;
+    color: #fff;
     height: 3rem;
     width: 50%;
     margin: 0 auto;
-    background-color: #fff;
-    border: 2px solid #f35588;
+    background-color: transparent;
+    border: 2px solid #fff;
     span{
       position: relative;
       z-index: 2;
@@ -41,12 +42,13 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #f35588;
+    background: #fff;
     transition: all .35s;
   }
 
   .button-contact-form:hover{
-    color: #fff;
+    color: #bb5180;
+    border: none;
   }
 
   .button-contact-form:hover:after{
@@ -56,10 +58,10 @@
 
 
   .wave {
-    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;        /* Change to speed up or slow down */
-    animation-iteration-count: infinite;  /* Never stop waving :) */
-    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
     display: inline-block;
   }
 
@@ -72,6 +74,74 @@
      50% { transform: rotate(10.0deg) }
      60% { transform: rotate( 0.0deg) }
     100% { transform: rotate( 0.0deg) }
+  }
+}
+
+#contact-form{
+  position: relative;
+}
+
+#wrap-action{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, -50%);
+  opacity: 0;
+  &.active{
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    transition: transform .6s, opacity .6s;
+    opacity: 1;
+  }
+  #action{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #000;
+    background: transparent;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background .4s;
+    &:hover{
+      background: rgba(0, 0, 0, .1);
+    }
+  }
+}
+
+svg{
+  display: block;
+  width: 101%;
+  height: 72vh;
+  .polymorph {
+    fill: #f9f9f9;
+  }
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  #content{
+    transform: translateY(-50px);
+    opacity: 0;
+    color: #fff;
+    transition: transform .6s .2s, opacity .6s .2s;
+    #close{
+      width: 3rem;
+      margin-top: 2rem;
+      cursor: pointer;
+    }
+    &.active{
+      z-index: 4;
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 }
 
