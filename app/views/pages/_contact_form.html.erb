@@ -1,18 +1,24 @@
-<div class="contact-form text-container">
-  <h1>Say hi ! <span class="wave">👋🏻</span></h1>
-  <form
-    action="https://formspree.io/xrgywdep"
-    method="POST"
-  >
-    <label>Votre email :
-      <input type="text" name="_replyto">
-    </label>
-    <label>Laissez-moi un p'tit mot :
-      <textarea name="message"></textarea>
-    </label>
-
-    <!-- your other form fields go here -->
-
-    <button class="button-contact-form" type="submit"><span>Envoyer</span></button>
-  </form>
+<div class="contact-form">
+  <section id="contact-form">
+    <div class="active" id="wrap-action">
+      <button id="action">Say hi ! <span class="wave">👋🏻</span></button>
+    </div>
+    <svg viewBox="0 0 215 110" preserveAspectRatio="none">
+      <polygon class="polymorph" points="215,110 0,110 0,0 215,0"></polygon>
+    </svg>
+    <div class="container">
+      <div id="content">
+        <form action="https://formspree.io/xrgywdep" method="POST">
+          <label>Votre email :
+            <input type="text" name="_replyto">
+          </label>
+          <label>Laissez-moi un p'tit mot :
+            <textarea name="message"></textarea>
+          </label>
+          <button class="button-contact-form" type="submit"><span>Envoyer</span></button>
+          <%= image_tag 'close.svg', id: 'close' %>
+        </form>
+      </div>
+    </div>
+  </section>
 </div>

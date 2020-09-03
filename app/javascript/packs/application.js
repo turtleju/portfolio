@@ -14,11 +14,13 @@ import anime from 'animejs/lib/anime.es.js';
 import { initTitle } from '../components/title';
 import { initUpdateNavbarOnScroll } from '../components/navbar';
 import { initSmoothScroll } from '../components/smoothscroll';
+import { initContactMorphing } from '../components/contact_morphing';
 
 document.addEventListener('turbolinks:load', () => {
   initTitle();
   initUpdateNavbarOnScroll();
   initSmoothScroll();
+  initContactMorphing();
 });
 
 // Uncomment to copy all static images under ../images to the output folder and reference
