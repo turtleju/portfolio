@@ -15,19 +15,20 @@
     }
   }
   .experiences-shape-bottom {
-      position: absolute;
-      bottom: -4rem;
-      left: 0;
-      width: 100%;
-      overflow: hidden;
-      line-height: 0;
+    position: absolute;
+    bottom: -6rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotateY(180deg);
   }
 
   .experiences-shape-bottom svg {
-      position: relative;
-      display: block;
-      width: calc(185% + 1.3px);
-      height: 66px;
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 98px;
   }
 
   .experiences-shape-bottom .shape-fill {
