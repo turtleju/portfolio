@@ -32,7 +32,7 @@
   }
   .projects-shape-top {
     position: absolute;
-    top: 0;
+    top: 0rem;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -42,8 +42,8 @@
   .projects-shape-top svg {
     position: relative;
     display: block;
-    width: calc(179% + 1.3px);
-    height: 56px;
+    width: calc(100% + 1.3px);
+    height: 120px;
   }
 
   .projects-shape-top .shape-fill {
@@ -51,21 +51,21 @@
   }
 
   .projects-shape-bottom {
-    z-index: 2;
     position: absolute;
-    bottom: -3rem;
+    bottom: -6rem;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    transform: rotate(180deg);
   }
 
   .projects-shape-bottom svg {
     position: relative;
     display: block;
-    width: calc(179% + 1.3px);
-    height: 56px;
-    transform: rotateY(180deg);
+    width: calc(100% + 1.3px);
+    height: 100px;
+    transform: rotateX(180deg);
   }
 
   .projects-shape-bottom .shape-fill {

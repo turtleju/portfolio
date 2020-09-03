@@ -20,42 +20,6 @@
       outline: 1px solid rgba(255, 255,255, .3);
     }
   }
-  .button-contact-form {
-    position: relative;
-    color: #fff;
-    height: 3rem;
-    width: 50%;
-    margin: 0 auto;
-    background-color: transparent;
-    border: 2px solid #fff;
-    span{
-      position: relative;
-      z-index: 2;
-      font-size: 1.5rem;
-    }
-  }
-
-  .button-contact-form:after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #fff;
-    transition: all .35s;
-  }
-
-  .button-contact-form:hover{
-    color: #bb5180;
-    border: none;
-  }
-
-  .button-contact-form:hover:after{
-    width: 100%;
-    color: #fff;
-  }
-
 
   .wave {
     animation-name: wave-animation;
@@ -81,6 +45,10 @@
   position: relative;
 }
 
+#action {
+  font-size: 1.5rem;
+}
+
 #wrap-action{
   position: absolute;
   top: 50%;
@@ -92,22 +60,6 @@
     transform: translate(-50%, -50%);
     transition: transform .6s, opacity .6s;
     opacity: 1;
-  }
-  #action{
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: #000;
-    background: transparent;
-    border: 2px solid;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
-    transition: background .4s;
-    &:hover{
-      background: rgba(0, 0, 0, .1);
-    }
   }
 }
 
@@ -147,10 +99,8 @@ svg{
 
 @media (max-width: 768px) {
   .contact-form {
-    .button-contact-form {
-      span {
-        font-size: 1.2rem;
-      }
+    .button-shadow {
+      font-size: 1.2rem;
     }
   }
 }

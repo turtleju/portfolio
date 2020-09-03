@@ -17,7 +17,7 @@
 
   .about-shape-top {
     position: absolute;
-    top: -8rem;
+    top: -9rem;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -28,9 +28,8 @@
   .about-shape-top svg {
     position: relative;
     display: block;
-    width: calc(246% + 1.3px);
-    height: 133px;
-    transform: rotateY(180deg);
+    width: calc(100% + 1.3px);
+    height: 150px;
   }
 
   .about-shape-top .shape-fill {
@@ -51,8 +50,9 @@
   .about-shape-bottom svg {
     position: relative;
     display: block;
-    width: calc(139% + 1.3px);
-    height: 69px;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
   }
 
   .about-shape-bottom .shape-fill {
