@@ -8,22 +8,29 @@
   background-position-y: 3rem;
   background-position-x: center;
   background-repeat: no-repeat;
-}
-
-.signature-box {
-  position: relative;
-  padding-top: 8rem;
-  svg {
-    position: absolute;
+  .title {
+    padding: 8rem;
+    h2 {
+      color: #000;
+      margin: 0 auto;
+    }
+  }
+  .signature-box {
+    position: relative;
+    margin-top: -4rem;
+    svg {
+      position: absolute;
+      height: 4rem;
+    }
   }
 }
 
 @media (max-width: 768px) {
   .main-banner {
     height: 55vh;
-  }
-  .main-title {
-    padding: 8rem 4rem 3rem 3rem;
-    font-size: 4rem;
+    .title {
+      padding: 5rem 3rem;
+      font-size: 4rem;
+    }
   }
 }
