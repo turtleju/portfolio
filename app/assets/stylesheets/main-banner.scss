@@ -3,7 +3,7 @@
   height: 70vh;
   position: relative;
   background-image: url(/assets/julietteg.svg);
-  background-color: #f35588;
+  background-color: #5192ba;
   background-size: cover;
   background-position-y: 3rem;
   background-position-x: center;
@@ -11,6 +11,7 @@
   .title {
     padding: 8rem;
     h2 {
+      font-family: 'Libre Franklin', sans-serif;
       color: #000;
       margin: 0 auto;
     }
