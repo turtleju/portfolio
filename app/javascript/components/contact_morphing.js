@@ -1,14 +1,10 @@
 const initContactMorphing = () => {
-  /** Inspired by coursetro.com **/
-
-  // Refs
   const wrapAction  = document.querySelector('#wrap-action'),
         btnAction   = document.querySelector('#action'),
         content  = document.querySelector('#content'),
         btnClose = document.querySelector('#close');
 
 
-  // Anime.js Commons Values for SVG Morph
   const common = {
     targets: '.polymorph',
     easing: 'easeOutQuad',
@@ -17,13 +13,10 @@ const initContactMorphing = () => {
   };
 
 
-  // Show content
   btnAction.addEventListener('click', () => {
-    // Elements apparence
     wrapAction.classList.remove('active');
     content.classList.add('active');
 
-    // Morph SVG
     anime({
       ...common,
       points: [
@@ -33,13 +26,10 @@ const initContactMorphing = () => {
   });
 
 
-  // Hide content
   btnClose.addEventListener('click', () => {
-    // Elements apparence
     content.classList.remove('active');
     wrapAction.classList.add('active');
 
-    // Morph SVG
     anime({
       ...common,
       points: [

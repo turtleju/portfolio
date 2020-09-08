@@ -63,7 +63,7 @@
   }
 }
 
-svg{
+svg {
   display: block;
   width: 101%;
   height: 72vh;
@@ -72,24 +72,24 @@ svg{
   }
 }
 
-.container{
+.container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 
-  #content{
+  #content {
     transform: translateY(-50px);
     opacity: 0;
     color: #fff;
     transition: transform .6s .2s, opacity .6s .2s;
-    #close{
+    #close {
       width: 3rem;
       margin-top: 2rem;
       cursor: pointer;
     }
-    &.active{
+    &.active {
       z-index: 4;
       transform: translateY(0);
       opacity: 1;

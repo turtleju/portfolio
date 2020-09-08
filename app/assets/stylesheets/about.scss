@@ -4,9 +4,12 @@
   color: #000;
   padding-bottom: 12rem;
 
+  h1 {
+    padding-top: 2rem;
+  }
   .avatar {
     width: 16rem;
-    margin: -4rem auto 4rem auto;
+    margin: 4rem auto 4rem auto;
     filter: grayscale(1);
   }
 
@@ -56,19 +59,29 @@
   }
 
   .about-shape-bottom .shape-fill {
-      fill: #61c3c1;
+    fill: #fae7e1;
   }
 }
 
 @media (max-width: 768px) {
   .about {
     padding-bottom: 8rem;
+    margin-top: -4rem;
     .avatar {
       width: 8rem;
-      margin: 0 auto;
+      margin: 2rem auto;
     }
     .github-chart {
       margin: 2rem 0rem;
+    }
+    .about-shape-top {
+      top: -5rem;
+    }
+    .about-shape-top svg {
+    height: 80px;
+    }
+    .about-shape-bottom svg {
+      height: 80px;
     }
   }
 }

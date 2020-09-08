@@ -1,43 +1,83 @@
 <div class="experiences text-container" id="experiences">
   <h1>Expériences</h1>
-  <ul>
-    <li>March 2020-Now
-      <h3>Product-design /// Front-end development</h3>
-      <h4>FG Soft</h4>
-      <p>Design de la solution Saas dédiée aux entreprises du bâtiment :</p>
-      <p>Maquettage du site.</p>
-      <p>Développement front.</p>
-    </li>
-    <li>2020
-      <h3>Teacher-assistant</h3>
-      <h4>Le Wagon</h4>
-      <p>Aide aux étudiants à comprendre les bases du développement, GIT, Ruby, HTML, CSS, BootStrap, JS, DB (PostgreSQL), Heroku et Ruby on Rails.</p>
-      <p>Comprendre leur code et les aider à débugger en interprétant les messages d'erreurs.</p>
-      <p>Les encourager à utiliser les bonnes pratiques et à garder un code DRY.</p>
-    </li>
-    <li>2014-2019
-      <h3>Responsable de développement Marques & Prestige</h3>
-      <h4>Dag Import</h4>
-      <p>Développement Commercial.
-      <p>Développement Partenariats fournisseurs:</p>
-      <p>Sourcing des marques et construction de partenariats.</p>
-      <p>Reporting et analyse des performances commerciales.</p>
-      <p>Les marques partenaires : Moleskine, Samsonite, Reisenthel, Adidas...</p>
-      <p>Management Pôle Commercial (6 commerciaux).</p>
-    </li>
-    <li>2005-2014
-      <h3>Commerciale - Acheteuse</h3>
-      <h4>Alann Mark's /// Arka Colomb</h4>
-      <p>Commerciale en objets publicitaires et cadeaux d’affaires.</p>
-      <p>Achats : sourcing produits, négociation.</p>
-    </li>
-    <li>2009-2010
-      <h3>Product-design /// Front-end development</h3>
-      <h4>Auto-entreprise</h4>
-      <p>Graphiste indépendante :</p>
-      <p>Maquettes, retouches photo, création visuels pour la mode.</p>
-    </li>
-  </ul>
+  <div class="chronology accordion" id="accordionExperience">
+    <div class="chronology-cards">
+      <div class="card button-shadow button-shadow-black">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <div class="text-left collapsed experience-title" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <%= image_tag 'chronology/new.png', class: 'chronology-icon' %>
+              Product-design /// Front-end development
+            </div>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExperience">
+          <div class="card-body experience-content">
+            <h2>March 2020-Now</h2>
+            <h3>Product-design /// Front-end development</h3>
+            <h4>FG Soft</h4>
+            <p>Design de la solution Saas dédiée aux entreprises du bâtiment :</p>
+            <p>Maquettage du site.</p>
+            <p>Développement front.</p>
+            <h2>2020</h2>
+            <h3>Teacher-assistant</h3>
+            <h4>Le Wagon</h4>
+            <p>Aide aux étudiants à comprendre les bases du développement, GIT, Ruby, HTML, CSS, BootStrap, JS, DB (PostgreSQL), Heroku et Ruby on Rails.</p>
+            <p>Comprendre leur code et les aider à débugger en interprétant les messages d'erreurs.</p>
+            <p>Les encourager à utiliser les bonnes pratiques et à garder un code DRY.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card button-shadow button-shadow-black">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <div class="text-left collapsed experience-title" role="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <%= image_tag 'chronology/old.png', class: 'chronology-icon' %>
+              Business Development
+            </div>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExperience">
+          <div class="card-body experience-content">
+            <h2>2014-2019</h2>
+            <h3>Responsable de développement Marques & Prestige</h3>
+            <h4>Dag Import</h4>
+            <p>Développement Commercial.
+            <p>Développement Partenariats fournisseurs:</p>
+            <p>Sourcing des marques et construction de partenariats.</p>
+            <p>Reporting et analyse des performances commerciales.</p>
+            <p>Les marques partenaires : Moleskine, Samsonite, Reisenthel, Adidas...</p>
+            <p>Management Pôle Commercial (6 commerciaux).</p>
+            <h2>2005-2014</h2>
+            <h3>Commerciale - Acheteuse</h3>
+            <h4>Alann Mark's /// Arka Colomb</h4>
+            <p>Commerciale en objets publicitaires et cadeaux d’affaires.</p>
+            <p>Achats : sourcing produits, négociation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card button-shadow button-shadow-black">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <div class="text-left collapsed experience-title" role="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <%= image_tag 'chronology/older.png', class: 'chronology-icon' %>
+              Graphic Design
+            </div>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExperience">
+          <div class="card-body experience-content">
+            <h2>2009-2010</h2>
+            <h3>Graphic Design</h3>
+            <h4>Auto-entreprise</h4>
+            <p>Graphiste indépendante :</p>
+            <p>Maquettes, retouches photo, création visuels pour la mode.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="experiences-shape-bottom">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
       <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
