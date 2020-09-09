@@ -1,13 +1,31 @@
 .footer {
   position: relative;
   height: 20vh;
-  background-color: #302f42;
-  color: #fff;
+  background-color: $bg-footer;
+  color: $pure-white;
   h4 {
     margin-bottom: 0;
   }
   p {
     font-size: 1rem;
+  }
+  .signature-box {
+    position: relative;
+    margin-top: -4rem;
+    svg {
+      position: absolute;
+      right: 2rem;
+      height: 4rem;
+      width: 8rem;
+    }
+  }
+
+  .social-network-icon {
+    height: 2rem;
+    width: auto;
+    svg {
+      fill: $pure-white;
+    }
   }
 }
 
@@ -29,7 +47,7 @@
 }
 
 .footer-shape-top .shape-fill {
-  fill: #302f42;
+  fill: $bg-footer;
 }
 
 .footer-container {

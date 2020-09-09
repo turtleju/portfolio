@@ -3,7 +3,7 @@
   height: 70vh;
   position: relative;
   background-image: url(/assets/julietteg.svg);
-  background-color: #5192ba;
+  background-color: $bg-main-banner;
   background-size: cover;
   background-position-y: 3rem;
   background-position-x: center;
@@ -12,16 +12,8 @@
     padding: 8rem;
     h2 {
       font-family: 'Libre Franklin', sans-serif;
-      color: #000;
+      color: $dark-blue;
       margin: 0 auto;
-    }
-  }
-  .signature-box {
-    position: relative;
-    margin-top: -4rem;
-    svg {
-      position: absolute;
-      height: 4rem;
     }
   }
 }

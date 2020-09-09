@@ -8,23 +8,36 @@
 }
 
 .button-shadow-black {
-  color: #000;
+  color: $black;
   &:hover{
-    box-shadow: 0.3em 0.3em 0 0 #000;
+    box-shadow: 0.3em 0.3em 0 0 $black;
   }
 }
 
 .button-shadow-white {
-    color: #fff;
+    color: $pure-white;
   &:hover{
-    box-shadow: 0.3em 0.3em 0 0 #fff;
+    box-shadow: 0.3em 0.3em 0 0 $pure-white;
   }
 }
 
+.button-shadow-blue {
+    color: $blue;
+  &:hover{
+    box-shadow: 0.3em 0.3em 0 0 $blue;
+  }
+}
 
+.button-shadow-dark-blue {
+    color: $dark-blue;
+  &:hover{
+    box-shadow: 0.3em 0.3em 0 0 $dark-blue;
+  }
+}
 
-h3 {
-  svg {
-    width: 20em;
+.button-shadow-pink {
+    color: $pink;
+  &:hover{
+    box-shadow: 0.3em 0.3em 0 0 $pink;
   }
 }

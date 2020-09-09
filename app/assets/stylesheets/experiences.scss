@@ -1,13 +1,14 @@
 .experiences {
-  background-color: #fae7e1;
+  background-color: $light-blue;
   position: relative;
   h1 {
-    color: #fd8274;
+    color: $blue;
   }
 
   .card {
     margin: 1rem 0rem;
     border-radius: 0;
+    background-color: $pure-white;
     .card-header {
       padding: 0;
       background-color: transparent;
@@ -19,7 +20,7 @@
     font-size: 2rem;
   }
   .experience-content {
-    color: #000;
+    color: $dark-blue;
     font-size: 1.5rem;
     text-transform: none;
     h2 {
@@ -29,26 +30,26 @@
     }
     p {
       font-size: 1rem;
-      color: #000;
+      color: $black;
     }
   }
 
 
   .chronology {
-    padding: 2rem 0rem;
   }
   .chronology-line {
     height: 2rem;
     width: 2px;
-    background-color: #f9f9f9;
+    background-color: $egg-shell;
     display: flex;
     flex-direction: column;
     align-self: center;
   }
   .chronology-icon {
     height: 4rem;
-    margin-right: 2rem;
     width: auto;
+    margin-right: 2rem;
+    filter: saturate(0.5);
   }
 
 
@@ -70,7 +71,7 @@
   }
 
   .experiences-shape-bottom .shape-fill {
-    fill: #fae7e1;
+    fill: $light-blue;
   }
 
   @media (max-width: 768px) {
