@@ -105,6 +105,15 @@
   }
 
   @media (max-width: 768px) {
+    .project-cards-container {
+      grid-template-columns: 1fr;
+    }
+    .project-card .project-card-details {
+      margin: 2rem;
+    }
+    .project-card:hover .project-card-details {
+      transform: translateY(1rem);
+    }
     .projects-shape-top svg {
       height: 80px;
     }
