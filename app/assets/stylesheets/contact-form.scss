@@ -1,6 +1,6 @@
 .contact-form {
   position: relative;
-  background-color: #bb5180;
+  background-color: $dark-blue;
   form {
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     input, textarea {
       background-color: transparent;
       border: none;
-      border-bottom: 2px solid #fff;
+      border-bottom: 2px solid $pure-white;
       line-height: 2rem;
     }
     input:focus, textarea:focus {
@@ -68,7 +68,7 @@ svg {
   width: 101%;
   height: 72vh;
   .polymorph {
-    fill: #f9f9f9;
+    fill: $egg-shell;
   }
 }
 
@@ -82,7 +82,7 @@ svg {
   #content {
     transform: translateY(-50px);
     opacity: 0;
-    color: #fff;
+    color: $pure-white;
     transition: transform .6s .2s, opacity .6s .2s;
     #close {
       width: 3rem;
