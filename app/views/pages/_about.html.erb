@@ -13,10 +13,11 @@
   <p>le développement de produits répondant à de véritables besoins, les plus "user-friendly" possibles !</p>
   <p>J'ai obtenu la Certification conceptrice/développeuse d'application web - Niveau II, Fullstack development fin 2019 à <%= image_tag "lewagon.png", size: "40" %> .</p>
   <p>Et depuis... je code 🤓</p>
-  <div class="github-chart">
-    <img src="http://ghchart.rshah.org/118AB2/turtleju" alt="My Github Chart">
-  </div>
-
+  <%= link_to "https://github.com/turtleju", target: '_blank' do %>
+    <div class="github-chart">
+      <img src="http://ghchart.rshah.org/118AB2/turtleju" alt="My Github Chart">
+    </div>
+  <% end %>
   <div class="about-shape-bottom">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
       <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
