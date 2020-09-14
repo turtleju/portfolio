@@ -1,0 +1,14 @@
+#flash-message {
+  .alert {
+    background-color: $light-pink;
+    border: 1px solid $pink;
+    color: $pink;
+    font-weight: bold;
+  }
+  .notice {
+    background-color: $light-green;
+    border: 1px solid $green;
+    color: $green;
+    font-weight: bold;
+  }
+}
