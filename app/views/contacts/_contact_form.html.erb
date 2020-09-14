@@ -1,6 +1,16 @@
 <div class="contact-form">
   <section id="contact-form">
     <div class="active" id="wrap-action">
+      <% if flash[:alert] %>
+        <div id="flash-message">
+          <%= render 'shared/flash' %>
+        </div>
+      <% end %>
+      <% if flash[:notice] %>
+        <div id="flash-message">
+          <%= render 'shared/flash' %>
+        </div>
+      <% end %>
       <button id="action" class="button-shadow button-shadow-dark-blue">Say hi ! <span class="wave">👋🏻</span></button>
     </div>
     <svg viewBox="0 0 215 110" preserveAspectRatio="none">
@@ -8,18 +18,22 @@
     </svg>
     <div class="container">
       <div id="content">
-        <%= form_for contacts_path do |f| %>
+        <%= form_for(ContactForm.new, url: contacts_path) do |f| %>
           <div>
-            <%= f.label :name %>
-            <%= f.text_field  :name, required: true, class: "contacts-form-text-area" %><br>
-            <%= f.label :email %>
-            <%= f.text_field :email, required: true, class: "contacts-form-text-area" %><br>
+            <div class="form-with-label">
+              <%= f.label :name %>
+              <%= f.text_field  :name, required: true, class: "contacts-form-text-area" %>
+            </div>
+            <div class="form-with-label">
+              <%= f.label :email %>
+              <%= f.text_field :email, required: true, class: "contacts-form-text-area" %>
+            </div>
             <%= f.text_area :message,
-                            rows: 8,
+                            rows: 4,
                             cols: 40,
                             required: true,
                             class: "contacts-form-text-area",
-                            placeholder: "Your Message"%><br>
+                            placeholder: "Laissez-moi un p'tit mot !"%><br>
 
             <div class= "hidden d-none">
               <%= f.text_field :nickname %>
@@ -29,9 +43,6 @@
           </div>
         <% end %>
         <%= image_tag 'close.svg', id: 'close' %>
-        <div class="col-md-6" id="flash-message">
-          <%= render 'flash' %>
-        </div>
       </div>
     </div>
   </section>

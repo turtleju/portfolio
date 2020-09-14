@@ -1,19 +1,13 @@
 class ContactsController < ApplicationController
   before_action :contact_params, only: [:create]
 
-  def index
-    @contact = ContactForm.new
-  end
-
   def create
     @contact = ContactForm.new(params[:contact_form])
     @contact.request = request
     if @contact.deliver
-      flash.now[:notice] = 'Thank you for your message!'
-      render :index
+      redirect_to root_path(anchor: 'contact-form'), notice: 'Le message a bien été envoyé !'
     else
-      flash.now[:error] = 'Cannot send message.'
-      render :index
+      redirect_to root_path(anchor: 'contact-form'), alert: "Mmmm... quelquechose n'a pas fonctionné !"
     end
   end
 

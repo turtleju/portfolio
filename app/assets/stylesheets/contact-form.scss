@@ -2,32 +2,40 @@
   position: relative;
   background-color: $dark-blue;
   form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     div {
-      display: grid;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin-bottom: 1.5rem;
-      width: 50%;
-      br {
-        display: none;
+      .form-with-label {
+        display: flex;
+        flex-direction: row;
+        label {
+          margin-right: 1rem;
+          margin-bottom: 0;
+          align-self: flex-end;
+          text-align: end;
+        }
+        input {
+          width: 18rem;
+        }
       }
     }
+    input[type="text"], textarea {
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid $pure-white;
+      line-height: 2rem;
+    }
+    ::placeholder {
+      color: $pure-white;
+      font-weight: 200;
+      text-align: center;
+    }
+    input:focus, textarea:focus {
+      outline: 1px solid rgba(255, 255,255, .3);
+    }
   }
-  // label {
-  //   display: grid;
-  //   margin-bottom: 1.5rem;
-  //   width: 50%;
-  //   input, textarea {
-  //     background-color: transparent;
-  //     border: none;
-  //     border-bottom: 2px solid $pure-white;
-  //     line-height: 2rem;
-  //   }
-  //   input:focus, textarea:focus {
-  //     outline: 1px solid rgba(255, 255,255, .3);
-  //   }
-  // }
 
   .wave {
     animation-name: wave-animation;
@@ -69,6 +77,9 @@
     transform: translate(-50%, -50%);
     transition: transform .6s, opacity .6s;
     opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -95,7 +106,6 @@ svg {
     transition: transform .6s .2s, opacity .6s .2s;
     #close {
       width: 3rem;
-      margin-top: 2rem;
       cursor: pointer;
     }
     &.active {
@@ -108,6 +118,18 @@ svg {
 
 @media (max-width: 768px) {
   .contact-form {
+    form {
+      div {
+        .form-with-label {
+          input {
+            width: 12rem;
+          }
+        }
+        textarea {
+          width: 16rem;
+        }
+      }
+    }
     .button-shadow {
       font-size: 1.2rem;
     }
