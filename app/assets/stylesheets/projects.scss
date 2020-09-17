@@ -1,8 +1,8 @@
 .projects {
-  background-color: $light-pink;
+  background-color: $egg-shell;
   position: relative;
   h1 {
-    color: $pink;
+    color: $blue;
     padding-top: 4rem;
   }
   .full-page-container {
@@ -22,7 +22,7 @@
       flex-direction: column;
       align-items: center;
       color: $pure-white;
-      background-color: $pink;
+      background-color: $blue;
       width: 100%;
       padding: 4rem;
       div {
@@ -55,7 +55,7 @@
     flex-direction: column;
     align-items: center;
     background-color: $pure-white;
-    border: 2px solid $pink;
+    border: 2px solid $blue;
     padding: 2rem;
     margin-bottom: 4rem;
     p {
@@ -80,7 +80,7 @@
       display: flex;
       flex-direction: column;
       bottom: 0;
-      background-color: $pink;
+      background-color: $blue;
       color: $pure-white;
       padding: 2rem;
       margin: 4rem;
@@ -91,7 +91,7 @@
     }
   }
   .project-card:hover {
-    box-shadow: 0.3em 0.3em 0 0 $pink;
+    box-shadow: 0.3em 0.3em 0 0 $blue;
   }
   .project-card:hover .project-card-details {
     transform: translateY(-1rem);
@@ -116,7 +116,7 @@
   }
 
   .projects-shape-top .shape-fill {
-    fill: $egg-shell;
+    fill: $light-orange;
   }
 
   .projects-shape-bottom {
@@ -138,7 +138,7 @@
   }
 
   .projects-shape-bottom .shape-fill {
-    fill: $light-pink;
+    fill: $egg-shell;
   }
 
   @media (max-width: 768px) {
