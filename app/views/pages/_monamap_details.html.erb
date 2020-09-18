@@ -1,25 +1,23 @@
 <div class="full-page-container" id="details-monamap">
   <div class="full-page-content">
-    <h3>Mon@map</h3>
-      <div class="row">
-        <div class="col text-center text-uppercase">
-          <h3>Pain :</h3>
-        </div>
-        <div class="col text-center text-uppercase">
-          <h3>Gain :</h3>
-        </div>
+    <h2>Mon@map</h2>
+    <div class="grid-description">
+      <div class="title-description pain"></div>
+      <div class="description">
+        <p>Adhérer à une AMAP est une action longue et fastidieuse : Les paiements sont font par chèques,
+           à éditer en une fois pour tous les mois de l'année, pour chaque producteur.
+           Tout est fait sur papier : les contrats, les inscriptions aux distributions... etc.
+        </p>
       </div>
-      <div class="row">
-        <div class="col">
-          <p>Adhérer à une AMAP est une action longue et fastidieuse : Les paiements sont font par chèques,
-                   à éditer en une fois pour tous les mois de l'année, pour chaque producteur.
-                Tout est fait sur papier : les contrats, les inscriptions aux distributions... etc.</p>
-        </div>
-        <div class="col">
-          <p>Adhésion facilitée par la plateforme : paiement en ligne, gestion des inscriptions, du calendrier de distribution, des règlements...</p>
-        </div>
+    </div>
+    <div class="grid-description">
+      <div class="title-description gain"></div>
+      <div class="description">
+        <p>Adhésion facilitée par la plateforme : paiement en ligne, gestion des inscriptions, du calendrier de distribution, des règlements...
+        </p>
       </div>
-    <iframe id="video"
+    </div>
+    <iframe id="video-monamap"
             class="project-video"
             width="1280"
             height="720"
@@ -28,6 +26,6 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
     </iframe>
-    <%= image_tag 'close.svg', id: 'close-project' %>
+    <%= image_tag 'close.svg', id: 'close-project-monamap', class: 'button-close' %>
   </div>
 </div>

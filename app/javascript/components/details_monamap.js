@@ -1,10 +1,10 @@
 const initDetailsMonamap = () => {
   const detailsMonamap  = document.querySelector('#details-monamap'),
-        detailsAction = document.querySelector('#details-action'),
-        btnClose = document.querySelector('#close-project'),
-        video = document.querySelector('#video');
+        openMonamap = document.querySelector('#details-action-monamap'),
+        closeMonamap = document.querySelector('#close-project-monamap'),
+        video = document.querySelector('#video-monamap');
 
-  detailsAction.addEventListener('click', () => {
+  openMonamap.addEventListener('click', () => {
     detailsMonamap.classList.add('active');
 
     anime({
@@ -15,7 +15,7 @@ const initDetailsMonamap = () => {
     });
   });
 
-  btnClose.addEventListener('click', () => {
+  closeMonamap.addEventListener('click', () => {
     detailsMonamap.classList.remove('active');
     // console.log(video)
     // video.pause();
