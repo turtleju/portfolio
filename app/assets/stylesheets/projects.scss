@@ -18,29 +18,66 @@
       margin-left: -16rem;
     }
     .full-page-content {
+      overflow: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       color: $pure-white;
       background-color: $blue;
       width: 100%;
-      padding: 4rem;
-      div {
+      padding: 2rem;
+      .grid-description {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        margin: 1rem;
+        padding: 0 8rem;
+        .title-description {
+          text-align: right;
+          background-repeat: no-repeat;
+          height: 4rem;
+          background-position-x: center;
+          background-size: contain;
+          &.pain {
+          background-image: asset-url('pain.svg');
+          }
+          &.gain {
+            background-image: asset-url('gain.svg');
+          }
+        }
+        .description {
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+      .description-section {
+        margin: 0 4rem 4rem 4rem;
+        text-align: center;
         p {
           font-size: 1rem;
         }
       }
-    }
-  }
-  #details-monamap {
-    #close-project {
-      width: 3rem;
-      cursor: pointer;
+      .stack-logos {
+        background-color: $pure-white;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        text-align: center;
+        .logo {
+          height: 2rem;
+          width: 2rem;
+          margin: 6px;
+        }
+      }
+      img {
+        max-width: 70%;
+        margin: 1rem 0;
+      }
     }
   }
 
   .project-video {
-    padding: 4rem 12rem;
+    padding: 0 8rem 2rem 8rem;
   }
 
   .project-cards-container {

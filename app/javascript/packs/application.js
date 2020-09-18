@@ -17,6 +17,7 @@ import { initUpdateNavbarOnScroll } from '../components/navbar';
 import { initSmoothScroll } from '../components/smoothscroll';
 import { initContactMorphing } from '../components/contact_morphing';
 import { initDetailsMonamap } from '../components/details_monamap';
+import { initDetailsIpm } from '../components/details_ipm';
 
 document.addEventListener('turbolinks:load', () => {
   initSignature();
@@ -24,6 +25,7 @@ document.addEventListener('turbolinks:load', () => {
   initSmoothScroll();
   initContactMorphing();
   initDetailsMonamap();
+  initDetailsIpm();
 });
 
 // Uncomment to copy all static images under ../images to the output folder and reference

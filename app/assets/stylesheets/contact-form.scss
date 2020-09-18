@@ -104,10 +104,6 @@ svg {
     opacity: 0;
     color: $pure-white;
     transition: transform .6s .2s, opacity .6s .2s;
-    #close {
-      width: 3rem;
-      cursor: pointer;
-    }
     &.active {
       z-index: 4;
       transform: translateY(0);
