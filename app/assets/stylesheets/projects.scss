@@ -25,12 +25,16 @@
       color: $pure-white;
       background-color: $blue;
       width: 100%;
+      margin: 8rem;
       padding: 2rem;
+      h2 {
+        margin-bottom: 2rem;
+      }
       .grid-description {
         display: grid;
         grid-template-columns: 1fr 3fr;
         grid-gap: 2rem;
-        margin: 1rem 0;
+        margin: 2rem 0;
         padding: 0 8rem;
         .title-description {
           text-align: right;
@@ -78,7 +82,10 @@
   }
 
   .project-video {
-    padding: 0 8rem 2rem 8rem;
+    width: 100%;
+    min-height: 32rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   .project-cards-container {
@@ -118,6 +125,7 @@
       display: flex;
       flex-direction: column;
       bottom: 0;
+      left: 0;
       background-color: $blue;
       color: $pure-white;
       padding: 2rem;
@@ -154,7 +162,7 @@
   }
 
   .projects-shape-top .shape-fill {
-    fill: $light-orange;
+    fill: $light-pink;
   }
 
   .projects-shape-bottom {
@@ -180,6 +188,33 @@
   }
 
   @media (max-width: 768px) {
+    .project-video {
+      min-height: 10rem;
+      width: 100%;
+    }
+
+    .full-page-container {
+      &.active {
+        margin-left: -1rem;
+      }
+      .full-page-content {
+        margin: 6rem 1rem;
+        .description-section {
+          margin: 1rem 0;
+        }
+        img {
+          max-width: 100%;
+        }
+        .grid-description {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          .title-description {
+            background-position-x: center;
+          }
+        }
+      }
+    }
     .project-cards-container {
       grid-template-columns: 1fr;
     }
