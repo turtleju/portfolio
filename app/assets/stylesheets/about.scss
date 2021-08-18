@@ -10,7 +10,10 @@
   .avatar {
     width: 12rem;
     margin: 4rem auto 4rem auto;
-    filter: grayscale(1);
+
+    img {
+      border-radius: 50%;
+    }
   }
 
   .github-chart {
