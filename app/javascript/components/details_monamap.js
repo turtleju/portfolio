@@ -9,7 +9,7 @@ const initDetailsMonamap = () => {
 
     anime({
       targets: detailsMonamap,
-      scale: 0.95,
+      scale: 0.98,
       easing: 'easeInOutQuad',
       direction: 'alternate',
     });
