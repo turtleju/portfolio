@@ -8,7 +8,7 @@ const initDetailsIpm = () => {
 
     anime({
       targets: detailsIpm,
-      scale: 0.95,
+      scale: 0.98,
       easing: 'easeInOutQuad',
       direction: 'alternate',
     });
