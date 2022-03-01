@@ -1,5 +1,5 @@
 meta_product_name: "portfolio"
 meta_title: "Juliette's portfolio"
-meta_description: "Product designer / Front-end developer junior. A la recherche de belles aventures digitales, pour les rendre encore plus belles !"
-meta_image: "social-jg.png" # should exist in `app/assets/images/`
-twitter_account: "@turtleju"   # required for Twitter Cards
+meta_description: "Juliette : Product designer | Front-end developer. Création ou adaptation de vos projets Web en se focalisant sur l'expérience de vos utilisateurs."
+meta_image: "social-jg.png"
+twitter_account: "@turtleju"
