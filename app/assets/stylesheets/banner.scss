@@ -1,9 +1,7 @@
-.main-banner {
+.banner {
   width: auto;
   height: 70vh;
   position: relative;
-  background-image: url(/assets/julietteg.svg);
-  background-color: $bg-main-banner;
   background-size: cover;
   background-position-y: 3rem;
   background-position-x: center;
@@ -11,9 +9,7 @@
   .title {
     padding: 8rem;
     h2 {
-      font-family: 'Libre Franklin', sans-serif;
       color: $dark-blue;
-      margin: 0 auto;
     }
   }
 }
@@ -25,5 +21,28 @@
       padding: 5rem 3rem;
       font-size: 4rem;
     }
+  }
+}
+
+.home-banner {
+  background-color: $bg-main-banner;
+  background-image: url(/assets/julietteg.svg);
+}
+
+.project-banner {
+  background-color: $dark-blue;
+  background-image: url(/assets/julietteg.svg);
+
+  .blurry-box {
+    backdrop-filter: blur(4px);
+    height: 100%;
+  }
+
+  .title h1 {
+    color: $pure-white;
+  }
+
+  .title h2 {
+    color: $blue;
   }
 }
