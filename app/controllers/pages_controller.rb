@@ -6,4 +6,8 @@ class PagesController < ApplicationController
   def index
     @contact = ContactForm.new
   end
+
+  def ipm; end
+
+  def monamap; end
 end

@@ -1,5 +1,5 @@
 <div class="navbar navbar-expand-md fixed-top">
-  <%= link_to "#", class: "navbar-brand" do %>
+  <%= link_to root_path, class: "navbar-brand" do %>
     <%= image_tag "jg-icon.svg" %>
   <% end %>
 
@@ -11,16 +11,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <%= link_to "Qui suis-je?", "#about", class: "nav-link" %>
+        <%= link_to "Qui suis-je?", root_path(anchor: "about"), class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Expériences", "#experiences", class: "nav-link" %>
+        <%= link_to "Expériences", root_path(anchor: "experiences"), class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Compétences", "#skills", class: "nav-link" %>
+        <%= link_to "Compétences", root_path(anchor: "skills"), class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Projets", "#projects", class: "nav-link" %>
+        <%= link_to "Projets", root_path(anchor: "projects"), class: "nav-link" %>
       </li>
 <!--       <li class="nav-item">
         <%= link_to "Fun Facts", "#fun-facts", class: "nav-link" %>

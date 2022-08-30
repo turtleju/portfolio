@@ -12,7 +12,9 @@
       <div class="project-card-details">
         <h3>IPM</h3>
         <p>Conception d'une nouvelle version d'une solution Saas pour les artisans et les industriels du bâtiment, from scratch sous Rails.</p>
-        <button class="button-shadow button-shadow-white" id="details-action-ipm">En savoir +</button>
+        <%= link_to pages_ipm_path do %>
+          <button class="button-shadow button-shadow-white" id="details-action-ipm">En savoir +</button>
+        <% end %>
       </div>
     </div>
     <div class="project-card">
@@ -20,8 +22,10 @@
       <div class="project-card-details">
         <h3>Mon@map</h3>
         <p>Projet réalisé en équipe de 4 personnes en fin de formation (les 15 derniers jours !) et présenté en public lors du Demo Day le 29 novembre 2019.</p>
+        <%= link_to pages_monamap_path do %>
         <button class="button-shadow button-shadow-white" id="details-action-monamap">En savoir +
         </button>
+        <% end %>
       </div>
     </div>
   </div>
@@ -30,6 +34,4 @@
       <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
     </svg>
   </div>
-<%= render 'monamap_details' %>
-<%= render 'ipm_details' %>
 </div>
