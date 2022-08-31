@@ -9,39 +9,25 @@
   h2 {
     margin-bottom: 2rem;
   }
-  .grid-description {
+  .context-section {
     display: grid;
     grid-template-columns: 0.5fr 3fr;
     grid-gap: 2rem;
-    margin: 2rem 0;
-    padding: 0 8rem;
-    .title-description {
-      text-align: right;
-      background-repeat: no-repeat;
-      height: 4rem;
-      background-position-x: right;
-      background-position-y: center;
-      background-size: contain;
-      &.pain {
-      background-image: asset-url('pain.svg');
-      }
-      &.gain {
-        background-image: asset-url('gain.svg');
-      }
+    margin-bottom: 2rem;
+
+    i {
+      justify-self: end;
+      align-self: center;
+      font-size: 2rem;
     }
-    .description {
+
+    .context-text {
       p {
         font-size: 1rem;
       }
     }
   }
-  .description-section {
-    margin: 0 4rem 4rem 4rem;
-    text-align: center;
-    p {
-      font-size: 1rem;
-    }
-  }
+
   .stack-logos {
     background-color: $pure-white;
     padding: 1.5rem;
@@ -56,13 +42,6 @@
   img {
     max-width: 70%;
     margin: 1rem 0;
-  }
-
-  .project-video {
-    width: 100%;
-    min-height: 16rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
   }
 
   .project-cards-container {
@@ -165,11 +144,6 @@
   }
 
   @media (max-width: 768px) {
-    .project-video {
-      min-height: 10rem;
-      width: 100%;
-    }
-
     .project-cards-container {
       grid-template-columns: 1fr;
     }
